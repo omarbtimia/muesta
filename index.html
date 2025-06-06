@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Analizador de Coherencia Textual omar</title>
+<title>Analizador de Coherencia Textual</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -123,14 +122,10 @@
 </div>
 
 <script>
-const servidor = window.location.origin;
-alert(${window.location.protocol})
-
 document.getElementById('analizar-btn').addEventListener('click', () => {
     const texto = document.getElementById('texto').value;
-	const baseUrl = ${window.location.protocol}//${window.location.host}`;
-    fetch(`${baseUrl}/analizar`, {
 
+    fetch('https://6167-38-25-50-33.ngrok-free.app/analizar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
