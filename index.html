@@ -125,7 +125,7 @@
 document.getElementById('analizar-btn').addEventListener('click', () => {
     const texto = document.getElementById('texto').value;
 
-    fetch('https://6167-38-25-50-33.ngrok-free.app/analizar', {
+    fetch('http://localhost:8080/analizar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
